@@ -5,11 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href="./style.css">
-    <title>Document</title>
+
+    <title>맛집어스 Matzip.Us</title>
+
+    <meta name="author" content="박원석">
+    <meta name="description" content="맛집 지도 서비스">
+    <meta name="keywords" content="맛집지도, 먹방, 유명맛집, 유튜버, 맛집" />
 </head>
 
 <body>
-    <h1>안녕하세요.</h1>
-</body>
+    <nav>
+        <div class="inner">
+            <div class="nav-container">
+                <h1 class="nav-title">맛집어스</h1>
+                <button class="nav-contact">Contact</button>
+            </div>
+        </div>
+    </nav>
 
+    <main>
+        <section id="category">
+            <div class="inner">
+                <div class="category-container">
+                    <h2 class="category-title">찾으시는 음식 카테고리를 선택해보세요.</h2>
+                    <div class="category-list">
+                        <button class="category-item">한식</button>
+                        <button class="category-item">중식</button>
+                        <button class="category-item">일식</button>
+                        <button class="category-item">양식</button>
+                        <button class="category-item">분식</button>
+                        <button class="category-item">구이</button>
+                        <button class="category-item">회/초밥</button>
+                        <button class="category-item">기타</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 카테고리 -->
+        <div id="map" class="inner"></div>
+
+    <!-- 카카오지도 -->
+    </main>
+
+    <script 
+        type="text/javascript" 
+        src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8214275976281bb7476a821b0e0d327">
+    </script>
+    
+    <script src="main.js"></script>
+
+    </body>
 </html>
