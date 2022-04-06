@@ -1,29 +1,29 @@
-/* 인포윈도우 */
 .infowindow {
-    width: 25rem;
+    width: 17rem;
     border: 1px solid black;
     border-radius: 5px;
     background-color: white;
-}
-
-.infowindow-img-container {
+  }
+  
+  .infowindow-img-container {
     width: 100%;
     overflow: hidden;
-}
-
-
-.infowindow-img {
+  }
+  
+  .infowindow-img {
     width: 100%;
-}
-
-.infowindow-title {
-    font-size: 2rem;
-}
-
-.infowindow-address {
-    font-size: 1.6rem;
-}
-
-.infowindow-btn {
-    font-size: 1.6rem;
-}
+    border-radius: 5px;
+    /* border: 3px solid red; */
+  }
+  
+  .infowindow-title {
+    font-size: 1.7rem;
+  }
+  
+  .infowindow-address {
+    font-size: 1.2rem;
+  }
+  
+  .infowindow-btn {
+    font-size: 1.3rem;
+  }
