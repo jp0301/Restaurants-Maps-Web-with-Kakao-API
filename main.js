@@ -66,6 +66,28 @@ const dataSet = [
 		image_url: "https://youtu.be/Md6LQFtfApY",
 		category: '한식',
 	},
+	{
+		title: "개성만두",
+		address: "충남 논산시 대학로99",
+		url: "http://naver.me/xH2Q4dS8",
+		image_url: "https://youtu.be/2aMOgvKDjY0",
+		category: '한식',
+	},
+	{
+		title: "소담찬",
+		address: "충남 논산시 대학로 65번길 16",
+		url: "http://naver.me/FT0erQ41",
+		image_url: "https://youtu.be/g3HPUixIK54",
+		category: '기타',
+	},
+	{
+		title: "버무리 떡볶이 건양대점",
+		address: "충남 논산시 대학로 120",
+		url: "http://naver.me/x50QIDHX",
+		image_url: "https://youtu.be/AesxTu9nlJ0",
+		category: '분식',
+	},
+	
 ];
 
 /*
