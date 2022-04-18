@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,18 +10,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
 
     <link rel = "stylesheet" href="./style.css">
-    <link rel = "stylesheet" href="./map.css">
+    <link rel = "stylesheet" href="./menustyle.css">
 
     <title>KYU & YOU MAP</title>
-
 </head>
 
-<body>
 
+
+<body>
     <div class = "wrapper">
         <div class="container">
-            <div class="top">
 
+
+
+            <div class="top">
                 <div class="left">
                     <select name="languages">
                         <option value="korea">korea</option>
@@ -28,7 +31,6 @@
                         <option value="china">china</option>
                     </select>
                 </div>
-
                 <div class="right">
                     <!-- 모달 메시지 팝업 버튼 -->
                     <a href="#" id="open"><i class="far fa-envelope"></i></a>
@@ -62,20 +64,21 @@
                 </div>
             </div>
 
-            <!-- 카카오 맵 api -->
-            <div id="map" class="kakao-map"></div>
 
             <div class="middle">
-                <div class="category-list">
-                    <button class="category-item" id="korea">한식</button>
-                    <button class="category-item" id="china">중식</button>
-                    <button class="category-item" id="japan">일식</button>
-                    <button class="category-item" id="america">양식</button>
-                    <button class="category-item" id="wheat">분식</button>
-                    <button class="category-item" id="meat">구이</button>
-                    <button class="category-item" id="sushi">회</button>
-                    <button class="category-item" id="etc">기타</button>
+                <div class="search-bar">
+                    <a href="#" class="logo"><img src="./images/google logo.png" alt=""></a>
+                    <input onkeyup="enterkey();" type="search" value="" class="query" placeholder="Search Google or type URL">
+                    <a href="#"><img src="./images/google mic.png" alt=""></a>
                 </div>
+                <div class="icons">
+                    <a href="#"><i class="fas fa-plus"></i></a>
+                    <a href="#"><i class="fas fa-image"></i></a>
+                    <a href="#"><i class="fas fa-bookmark"></i></a>
+                    <a href="#"><i class="fas fa-grin-hearts"></i></a>
+
+                </div>
+
             </div>
 
 
@@ -94,22 +97,14 @@
     </div>
 
 
-
-
-
     <script 
     type="text/javascript" 
     src="//dapi.kakao.com/v2/maps/sdk.js?appkey=f8214275976281bb7476a821b0e0d327&libraries=services">
     </script>
 
-
-
-
-
     </body>
-
 
 <script src="main.js"></script>
 <script src="toggle-menu.js"></script>
-
+<script src="googlesearch.js"></script>
 </html>

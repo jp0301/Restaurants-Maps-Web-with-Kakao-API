@@ -1,8 +1,7 @@
 /*
 ******************************************************************************
 1. 지도 생성과 확대 축소 컨트롤러 부분
-https://apis.map.kakao.com/web/sample/addMapControl
-
+******************************************************************************
 */
 var container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
 var options = { 
@@ -21,6 +20,7 @@ map.addControl(zoomControl, kakao.maps.ControlPosition.RIGHT);
 /*
 ******************************************************************************
 2. 더미데이터 준비(제목, 주소, url, 카테고리)
+******************************************************************************
 */
 
 const dataSet = [
@@ -87,13 +87,20 @@ const dataSet = [
 		image_url: "https://youtu.be/AesxTu9nlJ0",
 		category: '분식',
 	},
+	{
+		title: "나이스시",
+		address: "충남 논산시 내동 1234",
+		url: "https://www.naver.com/",
+		image_url: "https://youtu.be/jyUUHITab8w",
+		category: '일식',
+	},
 	
 ];
 
 /*
 **********************************************************
 3. 여러개 마커 찍기
-  * 주소 - 좌표 변환
+**********************************************************
 */
 
 // 주소-좌표 변환 객체를 생성합니다
@@ -119,8 +126,9 @@ function getCoordsByAddress(address) {
 
 
 /* 
-*************************************************************
+**********************************************
 4. 마커에 인포윈도우 붙이기
+**********************************************
 */
 
 function getContent(data) {
@@ -131,7 +139,6 @@ function getContent(data) {
   replaceUrl = replaceUrl.replace("https://www.youtube.com/watch?v=", "");
   finUrl = replaceUrl.split("&")[0];
 
-  // 인포윈도우 가공하기
   return `
   <div class="infowindow">
       <div class="infowindow-img-container">
@@ -150,11 +157,9 @@ function getContent(data) {
 }
 
 async function setMap(dataSet) {
-  //markerArray = [];
-  // infowindowArray = [];
 
 	for (var i = 0; i < dataSet.length; i++) {
-    // 마커를 생성합니다
+    // 마커 생성
     	const coords = await getCoordsByAddress(dataSet[i].address);
     	var marker = new kakao.maps.Marker({
       		map: map, // 마커를 표시할 지도
@@ -163,16 +168,14 @@ async function setMap(dataSet) {
 
     	markerArray.push(marker);
 
-    // 마커에 표시할 인포윈도우를 생성합니다
+
     	var infowindow = new kakao.maps.InfoWindow({
-      		content: getContent(dataSet[i]), // 인포윈도우에 표시할 내용
+      		content: getContent(dataSet[i]),
     	});
 
     	infowindowArray.push(infowindow);
 
-    // 마커에 mouseover 이벤트와 mouseout 이벤트를 등록합니다
-    // 이벤트 리스너로는 클로저를 만들어 등록합니다
-    // for문에서 클로저를 만들어 주지 않으면 마지막 마커에만 이벤트가 등록됩니다
+
     	kakao.maps.event.addListener(
     		marker,
 			"click",
@@ -204,7 +207,7 @@ function closeInfoWindow() {
 	}
 }
 
-// 인포윈도우를 닫는 클로저를 만드는 함수입니다
+// 인포윈도우를 닫는 클로저 만드는 함수
 function makeOutListener(infowindow) {
 	return function () {
     	infowindow.close();
@@ -214,6 +217,7 @@ function makeOutListener(infowindow) {
 /*
 **********************************************
 5. 카테고리 분류
+**********************************************
 */
 
 // 카테고리
@@ -234,7 +238,7 @@ categoryList.addEventListener("click", categoryHandler);
 async function categoryHandler(event) {
 	const categoryId = categoryMap[event.target.id];
 
-  // 데이터 분류
+  // 데이터 분류 용도
 	let categorizedDataSet = [];
 	for (let data of dataSet) {
     	if (data.category === categoryId) {
@@ -242,10 +246,8 @@ async function categoryHandler(event) {
     	}
 	}
 
-  // 기존 마커 삭제
 	closeMarker();
 
-  // 기존 인포윈도우 닫기
 	closeInfoWindow();
 
 	setMap(categorizedDataSet);
