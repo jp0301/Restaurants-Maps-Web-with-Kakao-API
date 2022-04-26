@@ -27,3 +27,12 @@
 📚 Youtube channel
   - <a href = "https://www.youtube.com/channel/UCHw5u2NzzRCZ15C-npOOefw">클론코딩 참고 채널 - 동네코딩</a>
   - <a href = "https://youtu.be/b11HnycEgVg">웹 프로젝트 영상</a>
+
+- - -
+### 🖥 Capture
+<img src="/image_readme/frame.png"  width="700" height="370">
+<img src="/image_readme/guide.png"  width="700" height="370">
+<img src="/image_readme/Web Main.png"  width="700" height="370">
+
+
+출처: https://cutemoomin.tistory.com/entry/Readme-파일에-이미지-넣기-마크다운-이미지 [무민은귀여워]
