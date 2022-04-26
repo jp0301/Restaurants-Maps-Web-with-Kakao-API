@@ -12,11 +12,11 @@
 - - -
 
 ### 🛠 Tool
-IDE: Visual Studio Code <br />
-DB: MySQL Workbench <br />
-형상관리: Git <br />
-Front-end: HTML, CSS, JS, Kakao API ... <br />
-Back-end: node js + express, rest API  ... <br />
+- IDE: Visual Studio Code 
+- DB: MySQL Workbench 
+- 형상관리: Git 
+- Front-end: HTML, CSS, JS, Kakao API ... 
+- Back-end: node js + express, rest API  ... 
 
 - - -
 
