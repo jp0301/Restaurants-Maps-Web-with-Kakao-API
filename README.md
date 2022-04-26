@@ -2,8 +2,6 @@
 # 🗺 Web Restaurants Maps with Kakao API
 ## 카카오 맵API를 활용한 학교 주변 맛집 지도
 
-- - -
-
 ### 📑 Plan 
 기 간: 3주 진행(2022.04.05 ~ 2022.04.20)
    - 1 주차: 카카오 맵 API 활용 및 웹 구현
