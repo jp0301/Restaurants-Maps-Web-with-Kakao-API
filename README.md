@@ -30,8 +30,8 @@
 
 - - -
 ### 🖥 Capture
-<img src="/image_readme/frame.png"  width="700" height="370">
-<img src="/image_readme/guide.png"  width="700" height="370">
+<img src="/image_readme/Frame.png"  width="700" height="370">
+<img src="/image_readme/Guide.png"  width="700" height="370">
 <img src="/image_readme/Web Main.png"  width="700" height="370">
 
 
