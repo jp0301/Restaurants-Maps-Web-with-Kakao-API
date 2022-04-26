@@ -34,5 +34,3 @@
 <img src="/image_readme/Guide.png"  width="700" height="370">
 <img src="/image_readme/Web Main.png"  width="700" height="370">
 
-
-출처: https://cutemoomin.tistory.com/entry/Readme-파일에-이미지-넣기-마크다운-이미지 [무민은귀여워]
