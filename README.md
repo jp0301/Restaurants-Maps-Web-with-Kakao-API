@@ -12,11 +12,12 @@
 - - -
 
 ### 🛠 Tool
-- IDE: Visual Studio Code 
-- DB: MySQL Workbench 
-- 형상관리: Git 
-- Front-end: HTML, CSS, JS, Kakao API ... 
-- Back-end: node js + express, rest API  ... 
+- 웹 프론트엔드: HTML, CSS, JS
+- Open API: 카카오맵 API
+- 서버&벡엔드: Nginx + Express.js: Rest API
+- 데이터베이스: MySQL, DB설계와 SQL
+- 클라우드: AWS EC2 + Ubuntu
+- Git & Github
 
 - - -
 
